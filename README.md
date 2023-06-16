@@ -1,2 +1,2 @@
-# KG_PY
+# PY
 Python
