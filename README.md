@@ -1,2 +1,2 @@
 # PY
-Python
+Python study
