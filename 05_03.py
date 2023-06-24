@@ -72,16 +72,17 @@
 # dd = [10, 20, "파이썬"]
 
 
-aa = []
+aa = [] # 빈 리스트 aa, bb생성
 bb = []
-cc = []
-value = 0
+value = 0   # value는 0, 2, 4, _로 증가시킬 값
 
-for i in range(0, 100, 1):
+for i in range(0, 100, 1):  # 100번을 반복
     aa.append(value)
-    value += 2
+    value += 2  # 리스트 aa에 value를 추가한 후 2씩 증가
 
-for i in range(0, 100, 1):
+for i in range(0, 100, 1):  # 0~99로 100번 반복
     bb.append(aa[99-i])
+    # i가 0일떄 99-i는 99가 됨. i가 1일 때는 98, i가 2일 때 는 97처럼 개속 변해 마지막으로 i가 99알 떄는 0이됨
+    # 리스트 bb에는 aa[99], aa[98], aa[97], _, aa[0]의 값이 추가 되므로 결국 리스트 aa값이 리스트 bb에 역순으로 입력
 
-print("bb[0]에는 %d이, bb[99]에는 %d입니다." % (bb[0], bb[99]))
+print("bb[0]에는 %d이, bb[99]에는 %d입니다." % (bb[0], bb[99])) # 확인을 하려고 bb[0]과 bb[99]를 출력
